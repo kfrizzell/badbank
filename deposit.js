@@ -71,13 +71,13 @@ function Deposit(){
         <span className="balance-information">Account Balance ${balance}</span>
         <br />
         <br />
-        <h5>Successful Deposit!</h5>
+        <h5>Success! Deposit confirmed</h5>
         <button
           type="submit"
           className="btn btn-light"
           onClick={() => props.setShow(true)}
         >
-          OK!
+          MAKE ANOTHER DEPOSIT
         </button>
       </>
     );
