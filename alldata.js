@@ -23,23 +23,3 @@ function AllData(){
     </tr>
   </thead>
 </table>
-
-  return (
-    <Card
-      txtcolor="blue"
-      bgcolor="info"
-      header="All Data"
-      key={ctx.users[0].name}
-      body={
-        <>
-          <ul className="list-group list-group-flush make-center bg-dark">
-            <li className="list-group-item make-center">
-              Total Balance ${ctx.users[0].balance}
-              {ctx}
-            </li>
-          </ul>
-        </>
-      }
-    />
-  );
-}
