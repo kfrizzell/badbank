@@ -39,12 +39,12 @@ function Deposit(){
         <span className="balance-information">Total Balance ${balance} </span>
         <br />
         <br />
-        Deposited (USD) $
+        Deposit (USD) $
         <input
           type="input"
           className="form-control"
           id="deposit"
-          placeholder="Enter deposit amount (USD)"
+          placeholder="Enter $ amount (USD)"
           value={deposit}
           onChange={(e) => {
             setDeposit(e.currentTarget.value);
