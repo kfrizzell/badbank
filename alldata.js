@@ -11,7 +11,6 @@ function AllData(){
         <>
           <ul className="list-group list-group-flush make-center bg-purple">
             <li className="list-group-item make-center">
-              Account Balance ${ctx.users[0].balance}
               Data {JSON.stringify(ctx)}<br/>
             </li>
           </ul>
