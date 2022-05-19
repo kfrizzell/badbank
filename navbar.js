@@ -4,9 +4,6 @@ function NavBar(){
     <>
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <a className="navbar-brand" href="#">BadBank Home</a>
-      <div class="logo-image">
-            <img src="image" class="img-fluid">
-      </div>  
     <button
         className="navbar-toggler"
         type="button"
