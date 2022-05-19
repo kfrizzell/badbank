@@ -9,7 +9,7 @@ function AllData(){
       key={ctx.users[0].name}
       body={
         <>
-          <ul className="list-group list-group-flush make-center bg-secondary">
+          <ul className="list-group list-group-flush make-center bg-purple">
             <li className="list-group-item make-center">
               Account Balance ${ctx.users[0].balance}
               Data {JSON.stringify(ctx)}<br/>
