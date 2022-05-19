@@ -9,7 +9,7 @@ function Deposit(){
     <Card
       txtcolor="white"
       bgcolor="success"
-      header="Deposit"
+      header="Deposit Funds"
       status={status}
       body={
         show ? (
@@ -36,7 +36,7 @@ function Deposit(){
 
     return (
       <>
-        <span className="balance-information">Total Balance ${balance} </span>
+        <span className="balance-information">Account Balance ${balance} </span>
         <br />
         <br />
         Deposit (USD) $
