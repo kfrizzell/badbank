@@ -2,9 +2,21 @@
 function AllData(){
   const ctx = React.useContext(UserContext);
   return (
-    <>
-    <h4>Account Data</h4>
-    {JSON.stringify(ctx)}<br/>
-    </>
+    <Card
+      txtcolor="blue"
+      bgcolor="info"
+      header="All Data"
+      key={ctx.users[0].name}
+      body={
+        <>
+          <ul className="list-group list-group-flush make-center bg-dark">
+            <li className="list-group-item make-center">
+              Account Balance ${ctx.users[0].balance}
+              Data {JSON.stringify(ctx)}<br/>
+            </li>
+          </ul>
+        </>
+      }
+    />
   );
 }
