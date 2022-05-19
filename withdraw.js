@@ -9,7 +9,7 @@ function Withdraw(){
     <Card
       txtcolor="blue"
       bgcolor="warning"
-      header="Withdraw"
+      header="Withdraw Funds"
       status={status}
       body={
         show ? (
@@ -45,7 +45,7 @@ function Withdraw(){
           type="input"
           className="form-control"
           id="withdraw"
-          placeholder="Enter dollar value"
+          placeholder="Enter total dollar value"
           value={withdraw}
           onChange={(e) => {
             setWithdraw(e.currentTarget.value);
@@ -69,10 +69,10 @@ function Withdraw(){
   function WithdrawMessage(props) {
     return (
       <>
-        <span className="balance-information">Account Balance{balance}</span>
+        <span className="balance-information">Account Balance ${balance}</span>
         <br />
         <br />
-        <h5>Success! Withdrawal confirmed</h5>
+        <h5>Success! Withdraw confirmed</h5>
         <button
           type="submit"
           className="btn btn-dark"
