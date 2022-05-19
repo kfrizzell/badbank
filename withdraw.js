@@ -45,7 +45,7 @@ function Withdraw(){
           type="input"
           className="form-control"
           id="withdraw"
-          placeholder="Enter total dollar value"
+          placeholder="Enter $ amount (USD)"
           value={withdraw}
           onChange={(e) => {
             setWithdraw(e.currentTarget.value);
