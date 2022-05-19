@@ -22,11 +22,6 @@ function NavBar(){
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/login/">
-            <span title="Click here to login">Login</span>
-            </a>
-          </li>
-          <li className="nav-item">
             <a className="nav-link" href="#/deposit/">
             <span title="Click here to deposit funds">Deposit</span>
             </a>
@@ -38,7 +33,7 @@ function NavBar(){
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/balance/">
-            <span title="Click here to see balance">Balance</span>
+            <span title="Click here to see balance">Account Dashboard</span>
             </a>
           </li>
           <li className="nav-item">
