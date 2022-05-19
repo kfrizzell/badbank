@@ -9,7 +9,7 @@ function CreateAccount(){
 
   function validate(field, label){
       if (!field) {
-        setStatus('Error: ' + label);
+        setStatus('Error: Blank' + label);
         setTimeout(() => setStatus(''),4000);
         return false;
       }
@@ -21,7 +21,7 @@ function CreateAccount(){
     if (!validate(name,     'name'))     return;
     if (!validate(email,    'email'))    return;
     if (!validate(password, 'password')) return;
-    ctx.users.push({name,email,password,balance:500});
+    ctx.users.push({name,email,password,balance:1000});
     setShow(false);
   }
 
