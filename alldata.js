@@ -4,7 +4,7 @@ function AllData(){
   return (
     <Card
       txtcolor="blue"
-      bgcolor="secondary"
+      bgcolor="success"
       header="All Account Data"
       key={ctx.users[0].name}
       body={
