@@ -22,6 +22,11 @@ function NavBar(){
             </a>
           </li>
           <li className="nav-item">
+            <a className="nav-link" href="#/login/">
+            <span title="Click here to login">Login</span>
+            </a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link" href="#/deposit/">
             <span title="Click here to deposit funds">Deposit</span>
             </a>
