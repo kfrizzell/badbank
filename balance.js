@@ -6,15 +6,13 @@ function Balance(){
     <Card
       txtcolor="blue"
       bgcolor="info"
-      header="Account"
+      header="Account Balance"
       key={ctx.users[0].name}
       body={
         <>
           <ul className="list-group list-group-flush make-center bg-dark">
             <li className="list-group-item make-center">
-              Total Balance ${ctx.users[0].balance}
-              Name {ctx.users[0].name}
-              Data {ctx.users.push({name,email,password,balance:1000})}
+              Account Balance ${ctx.users[0].balance}
             </li>
           </ul>
         </>
