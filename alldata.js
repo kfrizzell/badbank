@@ -4,8 +4,8 @@ function AllData(){
   return (
     <Card
       txtcolor="blue"
-      bgcolor="info"
-      header="All Data"
+      bgcolor="secondary"
+      header="All Account Data"
       key={ctx.users[0].name}
       body={
         <>
