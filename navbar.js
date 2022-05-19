@@ -33,7 +33,7 @@ function NavBar(){
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/balance/">
-            <span title="Click here to see balance">Account Dashboard</span>
+            <span title="Click here to see balance">Current Balance</span>
             </a>
           </li>
           <li className="nav-item">
