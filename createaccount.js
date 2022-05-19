@@ -41,8 +41,6 @@ function CreateAccount(){
               <>
               Name<br/>
               <input type="input" className="form-control" id="name" placeholder="Enter name" value={name} onChange={e => setName(e.currentTarget.value)} /><br/>
-              Phone<br/>
-              <input type="input" className="form-control" id="phone" placeholder="Enter phone number" value={phone} onChange={e => setPhone(e.currentTarget.value)} /><br/>
               Email address<br/>
               <input type="input" className="form-control" id="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.currentTarget.value)}/><br/>
               Password<br/>
