@@ -1,0 +1,53 @@
+nav {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: center;
+    background: #gray;
+  }
+
+  nav a {
+    transition: 0.3s ease;
+    background: #6e6f70;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    padding: 20px 0;
+    margin: 0 5px;
+    font-size: 17px;
+  }
+  
+  nav a:hover {
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+    padding: 6px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 600px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 5px;
+    max-height: fit-content;
+  }
+
+  .card-header {
+    font-weight: medium;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card-title,
+  .card-text {
+    text-align: center;
+  }
