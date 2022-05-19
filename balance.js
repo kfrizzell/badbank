@@ -12,7 +12,7 @@ function Balance(){
         <>
           <ul className="list-group list-group-flush make-center bg-dark">
             <li className="list-group-item make-center">
-              Total Balance ${ctx.users[0].balance}
+              Total Balance ${ctx.users[0].balance};
               Name ${ctx.users[0].name}
             </li>
           </ul>
