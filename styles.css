@@ -52,10 +52,6 @@ nav {
     text-align: center;
   }
 
-nav a:active {
-    color: #83c9ff; 
-}
-
 .active {
-    color: #83c9ff; 
+    color: #red; 
 }
