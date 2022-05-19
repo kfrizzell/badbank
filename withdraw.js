@@ -37,10 +37,10 @@ function Withdraw(){
 
     return (
       <>
-        <span className="balance-information">Account Balance{balance}</span>
+        <span className="balance-information">Account Balance ${balance}</span>
         <br />
         <br />
-        Total Withdrawal
+        Withdraw (USD) $
         <input
           type="input"
           className="form-control"
