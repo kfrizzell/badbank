@@ -4,7 +4,7 @@ function NavBar(){
     <>
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <a className="navbar-brand" href="#">BadBank Home</a>
-    <button
+      <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
