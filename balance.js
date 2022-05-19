@@ -2,27 +2,13 @@
 function Balance(){
   const ctx = React.useContext(UserContext);
 
-  return (
-    <Card
-      txtcolor="blue"
-      bgcolor="info"
-      header="Account Balance"
-      key={ctx.users[0].name}
-      body={
-        <>
-          <ul className="list-group list-group-flush make-center bg-dark">
-            <li className="list-group-item make-center">
-              Total Balance ${ctx.users[0].balance};
-              Name ${ctx.users[0].name}
-              {JSON.stringify(ctx)}<br/>
-            </li>
-          </ul>
-        </>
-      }
-    />
-  );
-}
-
+  ctx.users.push({name,email,password,balance:1000})
+  
+let table = document.querySelector("table");
+let data = ctx.users.push({name,email,password,balance:1000});
+generateTable(table, mountains);
+generateTableHead(table, data);  
+  
 function AllData(){
   const ctx = React.useContext(UserContext);
   return (
