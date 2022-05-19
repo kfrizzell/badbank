@@ -86,12 +86,12 @@ function Deposit(){
 //Provide validation and error message in deposit amount is not a number or a negative number
   function validate(deposit, balance) {
     if (isNaN(deposit)) {
-      setStatus("Error: Please enter a valid number");
+      setStatus("Error: Please enter a number");
       setTimeout(() => setStatus(""), 8000);
       return false;
     }
     if (deposit < 1) {
-      setStatus("Error: Deposit cannot be a negative value");
+      setStatus("Error: Deposit cannot be negative");
       setTimeout(() => setStatus(""), 8000);
       return false;
     }
