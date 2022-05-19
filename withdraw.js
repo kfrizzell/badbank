@@ -78,7 +78,7 @@ function Withdraw(){
           className="btn btn-dark"
           onClick={() => props.setShow(true)}
         >
-          CONFIRM!
+          MAKE ANOTHER WITHDRAWAL
         </button>
       </>
     );
