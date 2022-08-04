@@ -1,6 +1,5 @@
 //BadBank navigation with create, deposit, withdraw, all data, home
 function NavBar(){
-  const badBank = `${ctx.name}'s Bad Bank ~ Account #${ctx.account}`;
   return(
     <>
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
