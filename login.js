@@ -5,35 +5,54 @@ function Login(){
   const [name, setName]         = React.useState('');
   const [email, setEmail]       = React.useState('');
   const [password, setPassword] = React.useState('');
-  const [user, setUser]         = React.useState('');
   const ctx = React.useContext(UserContext);
-  const disable = (!email);
-  //let successName = "Success";
-  
+
+  function validate(field, label){
+      if (!field) {
+        setStatus('Error: Blank ' + label);
+        setTimeout(() => setStatus(''),4000);
+        return false;
+      }
+      return true;
+  }
+
+  function handleCreate(){
+    console.log(name,email,password);
+    if (!validate(name,     'name'))     return;
+    if (!validate(email,    'email'))    return;
+    if (!validate(password, 'password')) return;
+    ctx.users.push({name,email,password,balance:1000});
+    setShow(false);
+  }
+
+  function clearForm(){
+    setName('');
+    setEmail('');
+    setPassword('');
+    setShow(true);
+  }
+
   return (
-    <>
-    <Initnav />
-   <center>
     <Card
-      bgcolor="info"
-      header="Login"
+      bgcolor="primary"
+      header="Create Account"
       status={status}
-      body={show ? (  
+      body={show ? (
               <>
+              Name<br/>
+              <input type="input" className="form-control" id="name" placeholder="Enter name" value={name} onChange={e => setName(e.currentTarget.value)} /><br/>
               Email address<br/>
               <input type="input" className="form-control" id="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.currentTarget.value)}/><br/>
               Password<br/>
               <input type="password" className="form-control" id="password" placeholder="Enter password" value={password} onChange={e => setPassword(e.currentTarget.value)}/><br/>
-              <button type="submit" disabled={disable} className="btn btn-light" onClick={handleLogin}>Login</button>
+              <button type="submit" className="btn btn-light" onClick={handleCreate}>Create Account</button>
               </>
             ):(
               <>
-              <h5>{user}</h5>
-              <a className="btn btn-light" href="#/balance/" role="button">Continue to Balance</a>
+              <h5>Create another account</h5>
+              <button type="submit" className="btn btn-light" onClick={clearForm}>Create another account</button>
               </>
             )}
     />
-    </center>
-    </>
   )
 }
