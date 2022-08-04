@@ -30,6 +30,11 @@ function NavBar(){
             <a className="nav-link" href="#/alldata/">
             <span title="Click here to see all data">All Data</span>
             </a>
+              </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#/login/">
+            <span title="Login to account">Login</span>
+            </a>
           </li>
         </ul>
       </div>
