@@ -50,7 +50,7 @@ function Login(){
             ):(
               <>
               <h5>Create another account</h5>
-              <button type="submit" className="btn btn-light" onClick={clearForm}>Create another account</button>
+              <button type="submit" className="btn btn-light" onClick={clearForm}>Attempt Login Again</button>
               </>
             )}
     />
