@@ -1,4 +1,3 @@
-//BadBank navigation with create, deposit, withdraw, all data, home
 function NavBar(){
   return(
     <>
@@ -31,7 +30,8 @@ function NavBar(){
             <span title="Click here to see all data">All Data</span>
             </a>
               </li>
-          <li className="nav-item">
+          
+    <li className="nav-item">
             <a className="nav-link" href="#/login/">
             <span title="Login to account">Login</span>
             </a>
