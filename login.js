@@ -10,54 +10,6 @@ function Login(){
   const disable = (!email);
   //let successName = "Success";
   
-
-  function validate(field, label){
-    if (!email) {
-      setStatus('Error: Enter Email');
-      setTimeout(() => setStatus(''), 3000);
-      return false;
-    }
-    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)){
-      setStatus('Error: Email Invalid');
-      setTimeout(() => setStatus(''), 3000);
-      return false;
-    }
-    return true;
-}
-
-  function handleLogin(){
-    if (!validate (email, 'email')) return;
-    fetch(`/account/login/${email}/${password}`)
-    .then(response => response.text())
-    .then(text => {
-        const data = JSON.parse(text);
-         setStatus('');
-         setShow(false);
-         //setUser(`Success,  ${data.name}`);
-          ctx.name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
-          ctx.balance = data.balance;
-          ctx.email = data.email;
-          ctx.account = data.account;
-          setUser(`Success,  ${ctx.name}`);
-          console.log('JSON:', data);
-          console.log(`${ctx.name}`);
-          console.log(`${ctx.balance}`);
-          console.log(`${ctx.email}`);
-          console.log(user);
-           //new for Mongodb?
-           //unshift to put in [0] to make array
-    
-   } 
-    ); 
-  }
-  
-  function clearForm(){
-    setName('');
-    setEmail('');
-    setPassword('');
-    setShow(true);
-  }
-
   return (
     <>
     <Initnav />
