@@ -2,7 +2,7 @@ function NavBar(){
   return(
     <>
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-      <a className="navbar-brand" href="#">BadBank Home</a>
+      <a className="navbar-brand" href="#">Full Stack BadBank Home</a>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
