@@ -1,4 +1,4 @@
-# BadBank Website
+# BadBank Full Stack Banking Application Website
 ![bank2](https://user-images.githubusercontent.com/93966332/169269323-98d8b973-4247-48a4-80b7-c5df38bc7c87.png)
 
 ## kfrizzell.github.io
@@ -6,7 +6,7 @@
 
 Professional Certificate in Coding: Women's Cohort 2021-2022
 
-+ This is my front end banking application (BadBank).
++ This is my full stack banking front end banking application (BadBank).
 
 + Please do not reproduce, use, or duplicate.
 
