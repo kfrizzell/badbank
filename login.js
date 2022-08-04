@@ -49,8 +49,8 @@ function Login(){
               </>
             ):(
               <>
-              <h5>Create another account</h5>
-              <button type="submit" className="btn btn-light" onClick={clearForm}>Attempt Login Again</button>
+              <h5>Account Login Successful</h5>
+              <button type="submit" className="btn btn-light" onClick={clearForm}>Logout of Account</button>
               </>
             )}
     />
