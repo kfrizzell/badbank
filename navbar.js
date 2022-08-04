@@ -27,7 +27,7 @@ function NavBar(){
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/alldata/">
-            <span title="Click here to see all data">All Data</span>
+            <span title="Click here to see all data">Database</span>
             </a>
               </li>
           
